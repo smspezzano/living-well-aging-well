@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IdealMe</title>
+  <%= include_gon(watch: true) %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="container-fluid">
+<div class='col-xs-12'>
+  <%= render partial: "/layouts/navbar" %>
+</div>
+<br />
+<br />
+<br />
+
+ <p class="notice text-center"><%= notice %></p>
+ <p class="alert text-center"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>

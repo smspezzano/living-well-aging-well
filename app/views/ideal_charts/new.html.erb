@@ -1,0 +1,15 @@
+<div class='text-center'>
+<h1>Create your ideal chart.</h1>
+<h3>How much time out of your day do you want to devote to these categories?</h3>
+<%= form_for @idealchart, url: user_ideal_charts_path(current_user.id), method: :post do |f| %>
+  <%= f.label "Health"%><br>
+  <%= f.text_field :health_score, placeholder: "  25%" %><br>
+  <%= f.label "Social"%><br>
+  <%= f.text_field :social_score, placeholder: "  25%" %><br>
+  <%= f.label "Intellect"%><br>
+  <%= f.text_field :intellect_score, placeholder: "  50%" %><br><br>
+  <%= f.submit class: "btn btn-success btn-lg" %>
+<% end %>
+
+<a href='http://idealme.herokuapp.com'>http://idealme.herokuapp.com</a>
+</div>

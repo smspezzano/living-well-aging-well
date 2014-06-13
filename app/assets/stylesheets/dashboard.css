@@ -1,0 +1,24 @@
+/*#idealArea {
+  float: right;
+}
+
+#realArea {
+  float: left;
+}*/
+
+#stand_in {
+  height: 100%; 
+  width: 100%;
+}
+
+#addActivityForm {
+  display: none;
+}
+
+#addImageForm {
+  display: none;
+}
+
+/*.container-image {
+  margin-left: 240px;
+}*/
